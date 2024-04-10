@@ -740,63 +740,63 @@
           package. Users CANNOT rely on this file being available, or stored in
           this location. Nor can they rely on the existence of the macro.
   -->
-  <transmission name="ur5_arm_1_shoulder_pan_trans">
+  <transmission name="shoulder_pan_trans">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="ur5_arm_1_shoulder_pan_joint">
+    <joint name="shoulder_pan_joint">
       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
     </joint>
-    <actuator name="ur5_arm_1_shoulder_pan_motor">
+    <actuator name="shoulder_pan_motor">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
-  <transmission name="ur5_arm_1_shoulder_lift_trans">
+  <transmission name="shoulder_lift_trans">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="ur5_arm_1_shoulder_lift_joint">
+    <joint name="shoulder_lift_joint">
       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
     </joint>
-    <actuator name="ur5_arm_1_shoulder_lift_motor">
+    <actuator name="shoulder_lift_motor">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
-  <transmission name="ur5_arm_1_elbow_trans">
+  <transmission name="elbow_trans">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="ur5_arm_1_elbow_joint">
+    <joint name="elbow_joint">
       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
     </joint>
-    <actuator name="ur5_arm_1_elbow_motor">
+    <actuator name="elbow_motor">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
-  <transmission name="ur5_arm_1_wrist_1_trans">
+  <transmission name="wrist_1_trans">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="ur5_arm_1_wrist_1_joint">
+    <joint name="wrist_1_joint">
       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
     </joint>
-    <actuator name="ur5_arm_1_wrist_1_motor">
+    <actuator name="wrist_1_motor">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
-  <transmission name="ur5_arm_1_wrist_2_trans">
+  <transmission name="wrist_2_trans">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="ur5_arm_1_wrist_2_joint">
+    <joint name="wrist_2_joint">
       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
     </joint>
-    <actuator name="ur5_arm_1_wrist_2_motor">
+    <actuator name="wrist_2_motor">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
-  <transmission name="ur5_arm_1_wrist_3_trans">
+  <transmission name="wrist_3_trans">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="ur5_arm_1_wrist_3_joint">
+    <joint name="wrist_3_joint">
       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
     </joint>
-    <actuator name="ur5_arm_1_wrist_3_motor">
+    <actuator name="wrist_3_motor">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
   <!-- links: main serial chain -->
-  <link name="ur5_arm_1_base_link"/>
-  <link name="ur5_arm_1_base_link_inertia">
+  <link name="base_link"/>
+  <link name="base_link_inertia">
     <visual>
       <origin rpy="0 0 3.14159265359" xyz="0 0 0"/>
       <geometry>
@@ -818,7 +818,7 @@
       <inertia ixx="0.00443333156" ixy="0.0" ixz="0.0" iyy="0.00443333156" iyz="0.0" izz="0.0072"/>
     </inertial>
   </link>
-  <link name="ur5_arm_1_shoulder_link">
+  <link name="shoulder_link">
     <visual>
       <origin rpy="0 0 3.14159265359" xyz="0 0 0"/>
       <geometry>
@@ -840,7 +840,7 @@
       <inertia ixx="0.0149723523444" ixy="0.0" ixz="0.0" iyy="0.0149723523444" iyz="0.0" izz="0.01040625"/>
     </inertial>
   </link>
-  <link name="ur5_arm_1_upper_arm_link">
+  <link name="upper_arm_link">
     <visual>
       <origin rpy="1.57079632679 0 -1.57079632679" xyz="0 0 0.13585"/>
       <geometry>
@@ -862,7 +862,7 @@
       <inertia ixx="0.133885781862" ixy="0.0" ixz="0.0" iyy="0.133885781862" iyz="0.0" izz="0.0151074"/>
     </inertial>
   </link>
-  <link name="ur5_arm_1_forearm_link">
+  <link name="forearm_link">
     <visual>
       <origin rpy="1.57079632679 0 -1.57079632679" xyz="0 0 0.0165"/>
       <geometry>
@@ -884,7 +884,7 @@
       <inertia ixx="0.0312167910289" ixy="0.0" ixz="0.0" iyy="0.0312167910289" iyz="0.0" izz="0.004095"/>
     </inertial>
   </link>
-  <link name="ur5_arm_1_wrist_1_link">
+  <link name="wrist_1_link">
     <visual>
       <!-- TODO: Move this to a parameter -->
       <origin rpy="1.57079632679 0 0" xyz="0 0 -0.093"/>
@@ -907,7 +907,7 @@
       <inertia ixx="0.00201388877778" ixy="0.0" ixz="0.0" iyy="0.00201388877778" iyz="0.0" izz="0.0021942"/>
     </inertial>
   </link>
-  <link name="ur5_arm_1_wrist_2_link">
+  <link name="wrist_2_link">
     <visual>
       <origin rpy="0 0 0" xyz="0 0 -0.095"/>
       <geometry>
@@ -929,7 +929,7 @@
       <inertia ixx="0.00183103885092" ixy="0.0" ixz="0.0" iyy="0.00183103885092" iyz="0.0" izz="0.0021942"/>
     </inertial>
   </link>
-  <link name="ur5_arm_1_wrist_3_link">
+  <link name="wrist_3_link">
     <visual>
       <origin rpy="1.57079632679 0 0" xyz="0 0 -0.0818"/>
       <geometry>
@@ -952,9 +952,9 @@
     </inertial>
   </link>
   <!-- joints: main serial chain -->
-  <joint name="ur5_arm_1_base_link-base_link_inertia" type="fixed">
-    <parent link="ur5_arm_1_base_link"/>
-    <child link="ur5_arm_1_base_link_inertia"/>
+  <joint name="base_link-base_link_inertia" type="fixed">
+    <parent link="base_link"/>
+    <child link="base_link_inertia"/>
     <!-- 'base_link' is REP-103 aligned (so X+ forward), while the internal
            frames of the robot/controller have X+ pointing backwards.
            Use the joint between 'base_link' and 'base_link_inertia' (a dummy
@@ -962,84 +962,84 @@
       -->
     <origin rpy="0 0 3.14159265359" xyz="0 0 0"/>
   </joint>
-  <joint name="ur5_arm_1_shoulder_pan_joint" type="revolute">
-    <parent link="ur5_arm_1_base_link_inertia"/>
-    <child link="ur5_arm_1_shoulder_link"/>
+  <joint name="shoulder_pan_joint" type="revolute">
+    <parent link="base_link_inertia"/>
+    <child link="shoulder_link"/>
     <origin rpy="0 0 0" xyz="0 0 0.089159"/>
     <axis xyz="0 0 1"/>
     <limit effort="150.0" lower="-6.28318530718" upper="6.28318530718" velocity="3.14159265359"/>
     <dynamics damping="0" friction="0"/>
   </joint>
-  <joint name="ur5_arm_1_shoulder_lift_joint" type="revolute">
-    <parent link="ur5_arm_1_shoulder_link"/>
-    <child link="ur5_arm_1_upper_arm_link"/>
+  <joint name="shoulder_lift_joint" type="revolute">
+    <parent link="shoulder_link"/>
+    <child link="upper_arm_link"/>
     <origin rpy="1.570796327 0 0" xyz="0 0 0"/>
     <axis xyz="0 0 1"/>
     <limit effort="150.0" lower="-6.28318530718" upper="6.28318530718" velocity="3.14159265359"/>
     <dynamics damping="0" friction="0"/>
   </joint>
-  <joint name="ur5_arm_1_elbow_joint" type="revolute">
-    <parent link="ur5_arm_1_upper_arm_link"/>
-    <child link="ur5_arm_1_forearm_link"/>
+  <joint name="elbow_joint" type="revolute">
+    <parent link="upper_arm_link"/>
+    <child link="forearm_link"/>
     <origin rpy="0 0 0" xyz="-0.425 0 0"/>
     <axis xyz="0 0 1"/>
     <limit effort="150.0" lower="-3.14159265359" upper="3.14159265359" velocity="3.14159265359"/>
     <dynamics damping="0" friction="0"/>
   </joint>
-  <joint name="ur5_arm_1_wrist_1_joint" type="revolute">
-    <parent link="ur5_arm_1_forearm_link"/>
-    <child link="ur5_arm_1_wrist_1_link"/>
+  <joint name="wrist_1_joint" type="revolute">
+    <parent link="forearm_link"/>
+    <child link="wrist_1_link"/>
     <origin rpy="0 0 0" xyz="-0.39225 0 0.10915"/>
     <axis xyz="0 0 1"/>
     <limit effort="28.0" lower="-6.28318530718" upper="6.28318530718" velocity="3.14159265359"/>
     <dynamics damping="0" friction="0"/>
   </joint>
-  <joint name="ur5_arm_1_wrist_2_joint" type="revolute">
-    <parent link="ur5_arm_1_wrist_1_link"/>
-    <child link="ur5_arm_1_wrist_2_link"/>
+  <joint name="wrist_2_joint" type="revolute">
+    <parent link="wrist_1_link"/>
+    <child link="wrist_2_link"/>
     <origin rpy="1.570796327 0 0" xyz="0 -0.09465 -1.9413039509e-11"/>
     <axis xyz="0 0 1"/>
     <limit effort="28.0" lower="-6.28318530718" upper="6.28318530718" velocity="3.14159265359"/>
     <dynamics damping="0" friction="0"/>
   </joint>
-  <joint name="ur5_arm_1_wrist_3_joint" type="revolute">
-    <parent link="ur5_arm_1_wrist_2_link"/>
-    <child link="ur5_arm_1_wrist_3_link"/>
+  <joint name="wrist_3_joint" type="revolute">
+    <parent link="wrist_2_link"/>
+    <child link="wrist_3_link"/>
     <origin rpy="1.57079632659 3.14159265359 3.14159265359" xyz="0 0.0823 -1.68800121668e-11"/>
     <axis xyz="0 0 1"/>
     <limit effort="28.0" lower="-6.28318530718" upper="6.28318530718" velocity="3.14159265359"/>
     <dynamics damping="0" friction="0"/>
   </joint>
   <!-- ROS-Industrial 'base' frame: base_link to UR 'Base' Coordinates transform -->
-  <link name="ur5_arm_1_base"/>
-  <joint name="ur5_arm_1_base_link-base_fixed_joint" type="fixed">
+  <link name="base"/>
+  <joint name="base_link-base_fixed_joint" type="fixed">
     <!-- Note the rotation over Z of pi radians: as base_link is REP-103
            aligned (ie: has X+ forward, Y+ left and Z+ up), this is needed
            to correctly align 'base' with the 'Base' coordinate system of
            the UR controller.
       -->
     <origin rpy="0 0 3.14159265359" xyz="0 0 0"/>
-    <parent link="ur5_arm_1_base_link"/>
-    <child link="ur5_arm_1_base"/>
+    <parent link="base_link"/>
+    <child link="base"/>
   </joint>
   <!-- ROS-Industrial 'flange' frame: attachment point for EEF models -->
-  <link name="ur5_arm_1_flange"/>
-  <joint name="ur5_arm_1_wrist_3-flange" type="fixed">
-    <parent link="ur5_arm_1_wrist_3_link"/>
-    <child link="ur5_arm_1_flange"/>
+  <link name="flange"/>
+  <joint name="wrist_3-flange" type="fixed">
+    <parent link="wrist_3_link"/>
+    <child link="flange"/>
     <origin rpy="0 -1.57079632679 -1.57079632679" xyz="0 0 0"/>
   </joint>
   <!-- ROS-Industrial 'tool0' frame: all-zeros tool frame -->
-  <link name="ur5_arm_1_tool0"/>
-  <joint name="ur5_arm_1_flange-tool0" type="fixed">
+  <link name="tool0"/>
+  <joint name="flange-tool0" type="fixed">
     <!-- default toolframe: X+ left, Y+ up, Z+ front -->
     <origin rpy="1.57079632679 0 1.57079632679" xyz="0 0 0"/>
-    <parent link="ur5_arm_1_flange"/>
-    <child link="ur5_arm_1_tool0"/>
+    <parent link="flange"/>
+    <child link="tool0"/>
   </joint>
-  <joint name="ur5_arm_1_base_joint" type="fixed">
+  <joint name="base_joint" type="fixed">
     <parent link="lh_10_body_link"/>
-    <child link="ur5_arm_1_base_link"/>
+    <child link="base_link"/>
     <origin rpy="0 0 0" xyz="-0.23 -0.1 0.683"/>
   </joint>
 </robot>
