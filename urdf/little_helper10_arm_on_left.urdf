@@ -92,7 +92,7 @@
       <child link="virtual_laser_link" />
       <origin xyz="0.0 0.0 0.25" rpy="0.0 0.0 0" />
     </joint>
-    <link name="$virtual_laser_link">
+    <link name="virtual_laser_link">
     </link>
   <joint name="base_link_to_front_laser_joint" type="fixed">
     <parent link="base_link"/>
