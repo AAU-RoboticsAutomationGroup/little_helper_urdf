@@ -87,6 +87,13 @@
   </joint>
   <link name="imu_frame"/>
   <!-- Laser scanners -->
+  <joint name="base_link_to_virtual_laser_joint" type="fixed">
+      <parent link="base_link" />
+      <child link="virtual_laser_link" />
+      <origin xyz="0.0 0.0 0.25" rpy="0.0 0.0 0" />
+    </joint>
+    <link name="$virtual_laser_link">
+    </link>
   <joint name="base_link_to_front_laser_joint" type="fixed">
     <parent link="base_link"/>
     <child link="front_laser_link"/>
@@ -1040,7 +1047,7 @@
   <joint name="ur5_base_joint" type="fixed">
     <parent link="lh_10_body_link"/>
     <child link="ur5_base_link"/>
-    <origin rpy="0 0 0" xyz="-0.23 -0.1 0.683"/>
+    <origin rpy="0 0 -0.785398" xyz="-0.23 -0.1 0.683"/>
   </joint>
 </robot>
 
