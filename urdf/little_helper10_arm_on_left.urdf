@@ -1044,6 +1044,12 @@
     <parent link="flange"/>
     <child link="tool0"/>
   </joint>
+  <link name="tcp"/>
+  <joint name="tool0-tcp" type="fixed">
+    <origin rpy="0.0 0.0 0.0" xyz="0 0 0"/>
+    <parent link="tool0"/>
+    <child link="tcp"/>
+  </joint>
   <joint name="ur5_base_joint" type="fixed">
     <parent link="lh_10_body_link"/>
     <child link="ur5_base_link"/>
